@@ -1,5 +1,5 @@
 async function ambilData() {
-    const respon = await fetch('/.netlify/functions/get-komik');
+    const respon = await fetch('/functions/get-komik');
     const data = await respon.json();
 
     const wadah = document.getElementById('daftar_komik');
