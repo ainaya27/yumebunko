@@ -8,9 +8,9 @@ async function ambilData() {
         const card = `
             <div class="card">
                 <img src="${komik.gambar_url}" alt="${komik.judul}" style="width:100%">
+                <p>${komik.penulis}</p>
                 <h3>${komik.judul}</h3>
-                <p>Penulis: ${komik.penulis}</p>
-                <p>Status: ${komik.status}</p>
+                <p>${komik.status}</p>
             </div>
             `;
             wadah.innerHTML += card;
