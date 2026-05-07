@@ -175,6 +175,7 @@ nav {
 }
 
 .card {
+    color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
