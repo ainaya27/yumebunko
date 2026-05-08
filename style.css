@@ -110,10 +110,6 @@ nav {
     cursor: pointer;
 }
 
-.btn-search svg {
-    fill: white; /* Ganti warna ikon jadi putih */
-}
-
 .hero-buttons {
     display: flex;
     gap: 15px;
