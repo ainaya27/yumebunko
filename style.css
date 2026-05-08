@@ -105,6 +105,11 @@ nav {
     cursor: pointer;
 }
 
+.btn-search i {
+    color: white;
+    font-size: 1.2rem;
+}
+
 .hero-buttons {
     display: flex;
     gap: 15px;
