@@ -14,30 +14,78 @@
         <div class="logo">
             <img src="assets/logo.png" alt="Yumebunko">
         </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Cari buku, penulis, atau genre...">
+            <button class="btn-search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                    <path fill="white" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                </svg>
+            </button>
+        </div>
         <ul class="nav-links">
             <li><a href="catalog.html">Katalog</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Koleksi</a></li>
+            <li><a href="#">Kegiatan</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Tentang Kami</a></li>
         </ul>
     </nav>
-    <header class="hero">
-        <div class="hero-content">
+
+    <section class="hero-container">
+        <div class="hero-left">
+            <img src="assets/window_left.png" alt="Window left">
+        </div>
+
+        <div class="hero-center">
             <h1>Yume Bunko</h1>
-            <h3>Perpustakaan Mimpi untuk Para Pencinta Cerita</h3>
-            <p>Temukan ribuan buku, manga, dan novel favoritmu di perpustakaan digital yang penuh kehangatan.</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Cari buku, penulis, atau genre...">
-                <button class="btn-search">
-                    <img src="assets/search_icon.svg" alt="Search" style="width: 20px; height: 20px;">
-                </button>
-            </div>
-            <div class="hero-buttons">
-                <a href="catalog.html" class="btn-primary">Jelajahi Koleksi</a>
-                <a href="#" class="btn-secondary">Tentang Kami</a>
+            <p>Perpustakaan Mimpi untuk Para Pencinta Cerita</p>
+            <p>Temukan ratusan buku, komik, dan novel favoritmu di perpustakaan digital yang penuh kenyamanan.</p>
+            <div class="hero-button">
+                <a href="#" class="btn-first">Jelajahi Koleksi</a>
+                <a href="#" class="btn-second">Tentang Kami</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="assets/cottage.png" alt="Cottage">
+
+        <div class="hero-right">
+            <img src="assets/window_right.png" alt="Window Right">
         </div>
-    </header>
+
+        <div class="sakura-falling-area">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+        </div>
+    </section>
+
+    <section class="banner-slider">
+        <button class="slide-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path d="M201.4 297.4C188.9 309.9 188.9 330.2 201.4 342.7L361.4 502.7C373.9 515.2 394.2 515.2 406.7 502.7C419.2 490.2 419.2 469.9 406.7 457.4L269.3 320L406.6 182.6C419.1 170.1 419.1 149.8 406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3L201.3 297.3z"/>
+            </svg>
+        </button>
+        <div class="slides">
+            <div class="slide-active">
+                <img src="assets/banner1.jpeg" alt="Banner 1">
+            </div>
+            <div class="slide-passive">
+                <img src="assets/banner1.jpeg" alt="Banner 2">
+            </div>
+        </div>
+        <button class="slide-next">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path d="M201.4 297.4C188.9 309.9 188.9 330.2 201.4 342.7L361.4 502.7C373.9 515.2 394.2 515.2 406.7 502.7C419.2 490.2 419.2 469.9 406.7 457.4L269.3 320L406.6 182.6C419.1 170.1 419.1 149.8 406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3L201.3 297.3z"/>
+            </svg>
+        </button>
+
+        <div class="slider-dots">
+            <span class="dot-active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
 
     <section class="kategori-section">
         <div class="kategori-header">
