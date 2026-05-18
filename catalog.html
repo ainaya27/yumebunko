@@ -6,13 +6,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Yumebunko">
+        </div>
+        <ul class="nav-links">
+            <li><a href="catalog.html">Katalog</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Koleksi</a></li>
+            <li><a href="#">Kegiatan</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+        </ul>
+    </nav>
+
+    <!-- katalog header -->
+    <section class="katalog-hero">
+        <div class="katalog-hero-text">
+            <span class="katalog-hero-jp">コレクション</span>
+            <h1>Katalog Koleksi</h1>
+            <p>Temukan komik, novel, koleksi digital, dan lebih banyak lagi.</p>
+        </div>
+    </section>
+
+    <!-- category tab -->
+    <section class="katalog-topbar">
+        <div id="tab-row" class="tab-row">
+            <button class="tab-btn active" data-tab="semua">Semua</button>
+            <button class="tab-btn" data-tab="fisik">Koleksi Fisik</button>
+            <button class="tab-btn" data-tab="digital">Koleksi Digital</button>
+            <button class="tab-btn" data-tab="artikel">Artikel</button>
+        </div>
+    </section>
+
+    <!-- filter + search -->
+    <section class="katalog-toolbar">
+        <div id="pill-row" style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;"></div>
+        <input type="text" id="katalog-search" class="katalog-search-input" placeholder="Cari judul, pengarang, genre..." aria-label="Cari Koleksi">
+    </section>
+
+    <p id="hasil-meta" class="hasil-meta"></p>
+
+    <main id="katalog-grid" class="katalog-grid" aria-live="polite"></main>
+
     <h1>Katalog Komik</h1>
     <div id="daftar_komik" class="grid-container"></div>
 
+    <script src="datadummy.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

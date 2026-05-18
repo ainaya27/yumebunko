@@ -312,7 +312,7 @@ nav .nav-links li a:hover:after {
     transition: all 0.3s ease;
 }
 
-.kategori-section{
+/* .kategori-section{
     padding: 40px 8%;
     background: linear-gradient(to bottom, var(--pink-petal), var(--green-tea));
 }
@@ -347,7 +347,7 @@ nav .nav-links li a:hover:after {
 .kategori-card:hover {
     background: var(--pink-sakura);
     transform: translateY(-5px);
-}
+} */
 
 .news {
     background: linear-gradient(to bottom, var(--cream-warm), var(--green-tea));
@@ -458,6 +458,7 @@ nav .nav-links li a:hover:after {
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .services-item {
@@ -477,10 +478,18 @@ nav .nav-links li a:hover:after {
 }
 
 .icon-box {
-    font-size: 40px;
-    margin-bottom: 15px;
-    display: inline-block;
-    transition: transform 0.3 ease;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+
+.icon-box svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--ink-vintage);
 }
 
 .services-item:hover .icon-box {
@@ -498,7 +507,378 @@ nav .nav-links li a:hover:after {
     margin-top: 10px;
 }
 
-.grid-container {
+.katalog-hero {
+    background: linear-gradient(135deg, var(--terracotta-darkest) 0%, var(--terracotta-dark) 60%, var(--terracotta) 100%);
+    padding: 50px 8% 40px;
+    color: white;
+}
+
+.katalog-hero-jp {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.katalog-hero h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.katalog-hero p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.katalog-topbar {
+    background: var(--pink-petal);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    padding: 0 8%;
+    position: sticky;
+    top: 80px;
+    z-index: 99;
+}
+
+.tab-row {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.tab-row::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 14px 18px;
+    font-size: 13.5px;
+    font-weight: 600;
+    font-family: "Cause", cursive;
+    color: var(--terracotta-dark);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s, opacity 0.2s;
+    opacity: 0.6;
+}
+
+.tab-btn:hover {
+    opacity: 1;
+}
+
+.tab-btn.active {
+    opacity: 1;
+    border-bottom: 2px solid var(--terracotta);
+}
+
+.katalog-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 8%;
+    background: var(--cream-warm);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    flex-wrap: wrap;
+}
+
+#pill-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.pill-label {
+    font-size: 12px;
+    color: var(--ink-vintage);
+    opacity: 0.6;
+    margin-right: 2px;
+}
+
+.pill-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Cause", cursive;
+    border: 1.5px solid rgba(0,0,0,0.12);
+    background: white;
+    cursor: pointer;
+    color: var(--ink-vintage);
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.pill-btn:hover {
+    border-color: var(--terracotta);
+    color: var(--terracotta-dark);
+}
+
+.pill-btn.active {
+    background: var(--terracotta);
+    border-color: var(--terracotta);
+    color: white;
+}
+
+.katalog-search-input {
+    padding: 8px 16px;
+    border: 1.5px solid rgba(0,0,0,0.12);
+    border-radius: 30px;
+    font-size: 13px;
+    font-family: "Cause", cursive;
+    background: white;
+    outline: none;
+    width: 260px;
+    color: var(--ink-vintage);
+    transition: border-color 0.2s;
+}
+
+.katalog-search-input:focus {
+    border-color: var(--terracotta);
+}
+
+.katalog-search-input::placeholder {
+    color: var(--grey-soft);
+}
+
+.hasil-meta {
+    font-size: 12px;
+    color: var(--ink-vintage);
+    opacity: 0.5;
+    padding: 10px 8% 0;
+}
+
+.katalog-grid {
+    padding: 10px 8% 60px;
+    background: var(--cream-warm);
+    min-height: 400px;
+}
+
+.katalog-grid-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0 12px;
+}
+
+.section-label {
+    font-size: 13px;
+    color: var(--ink-vintage);
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+.section-divider {
+    flex: 1;
+    height: 1px;
+    background: rgba(0,0,0,0.08);
+}
+
+.section-count {
+    font-size: 11px;
+    background: var(--pink-petal);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 1px 8px;
+    color: var(--terracotta-dark);
+    font-weight: 600;
+}
+
+.katalog-card {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+}
+
+.katalog-card:hover {
+    transform:translateY(-4px);
+    box-shadow: 0 12px 30px rgba(201, 124, 93, 0.18);
+    border-color: rgba(201, 124, 93, 0.35);
+}
+
+.katalog-cover {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: var(--pink-petal);
+}
+
+.katalog-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.katalog-card:hover .katalog-cover img {
+    transform: scale(1.05);
+}
+
+.katalog-body {
+    padding: 10px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+}
+
+.katalog-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* Fisik */
+.badge-komik   { background: #fce7f3; color: #9d174d; }
+.badge-novel   { background: #ede9fe; color: #5b21b6; }
+.badge-majalah { background: #fef3c7; color: #92400e; }
+.badge-artbook { background: #d1fae5; color: #065f46; }
+/* Digital */
+.badge-ebook   { background: #dbeafe; color: #1e40af; }
+.badge-audio   { background: #fef9c3; color: #854d0e; }
+.badge-musik   { background: #f0fdf4; color: #166534; }
+/* Fanzine */
+.badge-fanzine { background: #fce7f3; color: #9d174d; }
+.badge-digital { background: #dbeafe; color: #1e40af; }
+/* Artikel */
+.badge-ulasan  { background: #ffedd5; color: #9a3412; }
+.badge-opini   { background: #f0f9ff; color: #0c4a6e; }
+
+.katalog-judul {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink-vintage);
+    line-height: 1.35;
+}
+
+.katalog-pengarang {
+    font-size: 11.5px;
+    color: var(--terracotta);
+}
+
+.katalog-genre {
+    font-size: 11px;
+    color: var(--grey-soft);
+}
+
+.katalog-desk {
+    font-size: 11px;
+    color: var(--ink-vintage);
+    opacity: 0.6;
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.katalog-footer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 7px;
+}
+
+.katalog-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.status-tersedia  { color: #15803d; }
+.status-tersedia  .status-dot { background: #4ade80; }
+ 
+.status-dipinjam  { color: #6b7280; }
+.status-dipinjam  .status-dot { background: #9ca3af; }
+ 
+.status-ditempat  { color: #92400e; }
+.status-ditempat  .status-dot { background: #fbbf24; }
+ 
+.status-digital   { color: #1d4ed8; }
+.status-digital   .status-dot { background: #60a5fa; }
+
+.tag-pinjam {
+    font-size: 10px;
+    background: #dcfce7;
+    color: #15803d;
+    border-radius: 8px;
+    padding: 1px 6px;
+    font-weight: 600;
+}
+
+.katalog-rak {
+    font-size: 10.5px;
+    color: var(--grey-soft);
+    margin-top: 2px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--grey-soft);
+    font-size: 14px;
+}
+
+.empty-state p:first-child {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .katalog-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .katalog-search-input {
+        width: 100%;
+    }
+    .katalog-grid-inner {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+}
+
+/* .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -518,15 +898,4 @@ nav .nav-links li a:hover:after {
     border-radius: 4px;
     height: 280px;
     object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-    .hero-left .hero-right {
-        justify-content: center;
-    }
-}
+} */
